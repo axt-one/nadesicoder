@@ -1,14 +1,5 @@
 'use strict';
 
-async function getNako() {
-    let response = await fetch(chrome.runtime.getURL('nako.js'));
-    if (response.ok) {
-        return await response.text();
-    } else {
-        console.log('HTTP-Error: ' + response.status);
-        return null;
-    }
-}
 
 function changeLanguage() {
     const select = document.querySelector('div#select-lang select.current');
@@ -32,70 +23,79 @@ function createButton(name) {
     return button;
 }
 
+
 function compile(code) {
-    let res = nako.compleFromCode(code);
-    res = convertCode(res.standalone);
+    let res = nako.compileStandalone(code, 'main.nako3');
+    res = convertCode(res);
+    const header = `\
+/*
+このコードは日本語プログラミング言語「なでしこ」で記述されたソースコードを、
+chrome拡張機能「なでしこーだー」でatcoderに提出可能なJavaScriptの形式に
+変換したものです。
+
+
+元のソースコード
+-------------------------------------------------------------
+${code}
+-------------------------------------------------------------
+*/
+
+
+// 変換されたJavaScript
+
+`
+    return header + res;
 }
 
 function nakoButton() {
-    const element = document.getElementById('submit');
-    if (!element) return;
+    const submit = document.getElementById('submit');
+    if (!submit) return;
     const button = createButton('なでしこ提出');
-    element.parentNode.append(button);
-
-    button.onclick = async () => {
-        const editorBtn = document.querySelector('.btn-toggle-editor');
-        const isPlainText = editorBtn.classList.contains('active');
-        const nako = await getNako();
-        if (!isPlainText) editorBtn.click();
-        const editor = document.querySelector('.plain-textarea');
-        let code = editor.value;
-        if (!nako || !code) {
-            if (!isPlainText) editorBtn.click();
-            return
-        }
-        code = `script = \`${code}\`\n\n${nako}`;
-        editor.value = code;
-        if (!isPlainText) editorBtn.click();
-        changeLanguage();
-        element.click();
-    };
+    clickEventListener(submit, button);
 }
 
 let nakoCode = '';
+let click = false;
 
 function nakoTest() {
     const run = document.querySelector('a.btn.btn-primary');
     if (!run) return;
     const button = createButton('なでしこ実行');
-    run.parentNode.append(button);
+    clickEventListener(run, button);
+}
 
+function clickEventListener(runButton, nakoButton) {
     const editorBtn = document.querySelector('.btn-toggle-editor');
     const isPlainText = editorBtn.classList.contains('active');
+    runButton.parentNode.append(nakoButton);
+
     if (!isPlainText) editorBtn.click();
     const editor = document.querySelector('.plain-textarea');
-    editor.value = nakoCode;
+    if (click) editor.value = nakoCode;
     if (!isPlainText) editorBtn.click();
 
-    button.onclick = async () => {
-        const editorBtn = document.querySelector('.btn-toggle-editor');
-        const isPlainText = editorBtn.classList.contains('active');
-        const nako = await getNako();
+
+    nakoButton.onclick = () => {
+        click = true;
         if (!isPlainText) editorBtn.click();
-        const editor = document.querySelector('.plain-textarea');
         let code = editor.value;
         nakoCode = code;
-        if (!nako || !code) {
+        if (!code) {
             if (!isPlainText) editorBtn.click();
-            return
+            return;
         }
-        code = `script = \`${code}\`\n\n${nako}`;
+        try {
+            code = compile(code);
+        } catch (error) {
+            if (!isPlainText) editorBtn.click();
+            window.alert(error);
+            return;
+        }
         editor.value = code;
         if (!isPlainText) editorBtn.click();
         changeLanguage();
-        run.click();
+        runButton.click();
     }
-
 }
 
 window.addEventListener('load', () => {
