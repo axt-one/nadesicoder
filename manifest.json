@@ -1,0 +1,27 @@
+{
+    "name": "なでしこーだー",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "description": "日本語プログラミング言語「なでしこ」でatcoderの問題を提出するための拡張機能",
+    "permissions": [],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://atcoder.jp/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "nako.js"
+            ],
+            "matches": [
+                "https://atcoder.jp/*"
+            ]
+        }
+    ]
+}
