@@ -1,6 +1,6 @@
 {
     "name": "なでしこーだー",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "manifest_version": 3,
     "description": "日本語プログラミング言語「なでしこ」でatcoderの問題を提出するための拡張機能",
     "permissions": [],
