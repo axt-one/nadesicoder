@@ -58,7 +58,7 @@ let nakoCode = '';
 let click = false;
 
 function nakoTest() {
-    const run = document.querySelector('a.btn.btn-primary');
+    const run = document.querySelector('.form-code-submit a.btn.btn-primary');
     if (!run) return;
     const button = createButton('なでしこ実行');
     clickEventListener(run, button);
