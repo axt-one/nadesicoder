@@ -7,12 +7,23 @@
     "content_scripts": [
         {
             "matches": [
-                "https://atcoder.jp/*"
+                "https://atcoder.jp/contests/*/tasks*",
+                "https://atcoder.jp/contests/*/submit*"
             ],
             "js": [
                 "src/nako.js",
-                "src/compiller.js",
-                "src/content.js"
+                "src/utils.js",
+                "src/submit.js"
+            ]
+        },
+        {
+            "matches": [
+                "https://atcoder.jp/contests/*/custom_test*"
+            ],
+            "js": [
+                "src/nako.js",
+                "src/utils.js",
+                "src/code_test.js"
             ]
         }
     ]
