@@ -10,9 +10,9 @@
                 "https://atcoder.jp/*"
             ],
             "js": [
-                "nako.js",
-                "setCompiller.js",
-                "content.js"
+                "src/nako.js",
+                "src/compiller.js",
+                "src/content.js"
             ]
         }
     ]

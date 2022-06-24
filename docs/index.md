@@ -1,6 +1,5 @@
-# なでしこーだー
-日本語プログラミング言語「[なでしこ](https://nadesi.com/top/)」で[AtCoder](https://atcoder.jp/)の問題を解くためのchrome拡張機能です。  
-「なでしこーだー」はブラウザで動かすことのできる「[なでしこ３](https://nadesi.com/doc3/)」の言語エンジンを利用して、なでしこ３で書いたコードをJavaScriptに変換することでAtCoderに提出できるようにしています。  
+「なでしこーだー」は日本語プログラミング言語「[なでしこ](https://nadesi.com/top/)」で[AtCoder](https://atcoder.jp/)の問題を解くためのchrome拡張機能です。  
+ブラウザで動かすことのできる「[なでしこ３](https://nadesi.com/doc3/)」の言語エンジンを利用して、なでしこ３で書いたコードを自動でJavaScriptに変換することでAtCoderに提出します。  
 標準入力の取得方法は[使い方](#使い方)を参照してください。
 
 ## インストール方法
