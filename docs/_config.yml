@@ -1,2 +1,7 @@
+lang: ja
+title: なでしこーだー
+description: 日本語言語「なでしこ３」でAtCoderの問題を解くためのchrome拡張機能
 theme: jekyll-theme-slate
-show-downloads: true
+show_downloads: true
+github:
+  is_project_page: true
