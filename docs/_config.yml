@@ -5,3 +5,5 @@ theme: jekyll-theme-slate
 show_downloads: true
 github:
   is_project_page: true
+plugins:
+  - jekyll-sitemap
