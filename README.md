@@ -1,8 +1,9 @@
 # なでしこーだー
 [![GitHub license](https://img.shields.io/github/license/axt-one/nadesicoder)](https://github.com/axt-one/nadesicoder/blob/master/LICENSE) [![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Faxt-one%2Fnadesicoder)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Faxt-one%2Fnadesicoder)  
-日本語プログラミング言語「[なでしこ](https://nadesi.com/top/)」で[AtCoder](https://atcoder.jp/)の問題を解くためのchrome拡張機能です。  
-「なでしこーだー」はブラウザで動かすことのできる「[なでしこ３](https://nadesi.com/doc3/)」の言語エンジンを利用して、なでしこ３で書いたコードをJavaScriptに変換することでAtCoderに提出できるようにしています。  
-標準入力の取得方法は[使い方](#使い方)を参照してください。
+
+「なでしこーだー」は日本語プログラミング言語「[なでしこ](https://nadesi.com/top/)」で[AtCoder](https://atcoder.jp/)の問題を解くためのchrome拡張機能です。  
+ブラウザで動かすことのできる「[なでしこ３](https://nadesi.com/doc3/)」の言語エンジンを利用して、なでしこ３で書いたコードを自動でJavaScriptに変換することでAtCoderに提出できるようにしています。  
+標準入力の取得方法は[使い方](#使い方)を参照してください。  
 
 ## インストール方法
 1. このリポジトリをクローンするか、ソースコードをダウンロードして展開します。
@@ -64,3 +65,6 @@ Aの配列合計を表示
 ### 標準出力
 上の例にあるように標準出力は「表示」命令を使うことができます。
 「コンソール表示」命令でも同じ結果になります。
+
+## 開発に参加する
+なでしこーだーはオープンソースです。改善点やバグを見つけたらissueやプルリクを送ってください。積極的なご参加お待ちしております。
