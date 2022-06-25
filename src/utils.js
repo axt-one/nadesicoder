@@ -1,15 +1,18 @@
+'use strict';
+
+
 function objToString(obj) {
     if (obj === null) {
         return 'null';
     }
     switch (typeof obj) {
-        case "undefined": return 'undefined';
-        case "string": return '`' + obj + '`';
-        case "function": return obj.toString();
-        case "object":
+        case 'undefined': return 'undefined';
+        case 'string': return JSON.stringify(obj);
+        case 'function': return obj.toString();
+        case 'object':
             var isArray = Array.isArray(obj);
             return ('{['[+isArray] + Object.keys(obj).map(function (key) {
-                return (isArray ? '' : '"' + key + '": ') + objToString(obj[key]);
+                return (isArray ? '' : JSON.stringify(key) + ':') + objToString(obj[key]);
             }).join(',') + '}]'[+isArray]);
         default: return obj.toString();
     }
