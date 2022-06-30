@@ -1,9 +1,12 @@
 # なでしこーだー
 [![GitHub license](https://img.shields.io/github/license/axt-one/nadesicoder)](https://github.com/axt-one/nadesicoder/blob/master/LICENSE) [![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Faxt-one%2Fnadesicoder)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Faxt-one%2Fnadesicoder)  
 
+<img src="docs/img/submit.png" width=640>
+
 「[なでしこーだー](https://axt-one.github.io/nadesicoder/)」は日本語プログラミング言語「[なでしこ](https://nadesi.com/top/)」で[AtCoder](https://atcoder.jp/)の問題を解くためのchrome拡張機能です。  
 ブラウザで動かすことのできる「[なでしこ３](https://nadesi.com/doc3/)」の言語エンジンを利用して、なでしこ３で書いたコードを自動でJavaScriptに変換することでAtCoderに提出できるようにしています。  
-標準入力の取得方法は[使い方](#使い方)を参照してください。  
+なでしこ３の文法は[なでしこ３公式マニュアル](https://nadesi.com/v3/doc/index.php)を参照してください。  
+なでしこーだーにおける標準入力の取得方法は[使い方](#使い方)を参照してください。
 
 注：「なでしこーだー」はなでしこ、AtCoder共に非公式です。
 
@@ -22,11 +25,17 @@
 ## 使い方
 AtCoderのコンテストページを開くと自動的に「なでしこーだー」が起動します。
 ### なでしこ３で書いたコードを提出する
+
+<img src="docs/img/problem.png" width=640>
+
 コンテストの「問題」ページもしくは「提出」ページを開き、「提出」ボタンの横に「なでしこ提出」ボタンが表示されていればOKです。  
 エディタになでしこ３でソースコードを書き、「なでしこ提出」ボタンをクリックすると自動でJavaScriptに変換されて提出されます。AtCoderの言語欄は特に変更する必要はありません。
 
 
 ### なでしこ３で書いたコードをテストする
+
+<img src="docs/img/code_test.png" width=640>
+
 「なでしこーだー」はAtCoderのコードテストにも対応しています。コンテストの「コードテスト」ページを開くと「実行」ボタンの横に「なでしこ実行」が表示されます。  
 エディタになでしこ３でソースコードを書き、「なでしこ実行」ボタンをクリックすると自動でJavaScriptに変換されて実行されます。AtCoderの言語欄は特に変更する必要はありません。
 
