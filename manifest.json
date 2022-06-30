@@ -1,9 +1,11 @@
 {
     "name": "なでしこーだー",
-    "version": "0.1.2",
+    "version": "1.0.0",
     "manifest_version": 3,
-    "description": "日本語プログラミング言語「なでしこ」でatcoderの問題を提出するためのchrome拡張機能",
-    "permissions": [],
+    "icons": {
+        "128": "icon/icon128.png"
+    },
+    "description": "日本語プログラミング言語「なでしこ」でAtCoderの問題を提出するためのchrome拡張機能",
     "content_scripts": [
         {
             "matches": [
