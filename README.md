@@ -1,5 +1,7 @@
 # なでしこーだー
-[![GitHub license](https://img.shields.io/github/license/axt-one/nadesicoder)](https://github.com/axt-one/nadesicoder/blob/master/LICENSE) [![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Faxt-one%2Fnadesicoder)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Faxt-one%2Fnadesicoder)  
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/pbhmgehdalachojhgbpnelagkfkoclfb)](https://chrome.google.com/webstore/detail/pbhmgehdalachojhgbpnelagkfkoclfb?authuser=0&hl=ja)
+[![GitHub license](https://img.shields.io/github/license/axt-one/nadesicoder)](https://github.com/axt-one/nadesicoder/blob/master/LICENSE)
+[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Faxt-one%2Fnadesicoder)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Faxt-one%2Fnadesicoder)  
 
 <img src="docs/img/submit.png" width=640>
 
@@ -14,13 +16,8 @@
 - なでしこv3.3.55
 
 ## インストール方法
-1. このリポジトリをクローンするか、ソースコードをダウンロードして展開します。
-2. chromeを起動します。
-3. 拡張機能の設定を開きます。
-   - 「環境設定 > 拡張機能」を開くか、chromeの検索バーに`chrome://extensions`と入力します。
-4. 右上の「デベロッパーモード」をオンにします。
-5. 左上の「パッケージ化されていない拡張機能を読み込む」をクリックし、1.でダウンロードしたフォルダを選択します。
-これでchromeに「なでしこーだー」がインストールされます。
+1. chromeを起動し、chrome ウェブストアで[なでしこーだーのページ](https://chrome.google.com/webstore/detail/pbhmgehdalachojhgbpnelagkfkoclfb?authuser=0&hl=ja)を開きます。
+2. 「chromeに追加」をクリックし、chromeへのインストールを許可します。
 
 ## 使い方
 AtCoderのコンテストページを開くと自動的に「なでしこーだー」が起動します。

@@ -1,3 +1,7 @@
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/pbhmgehdalachojhgbpnelagkfkoclfb)](https://chrome.google.com/webstore/detail/pbhmgehdalachojhgbpnelagkfkoclfb?authuser=0&hl=ja)
+[![GitHub license](https://img.shields.io/github/license/axt-one/nadesicoder)](https://github.com/axt-one/nadesicoder/blob/master/LICENSE)
+[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Faxt-one%2Fnadesicoder)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Faxt-one%2Fnadesicoder)  
+
 「なでしこーだー」は日本語プログラミング言語「[なでしこ](https://nadesi.com/top/)」で[AtCoder](https://atcoder.jp/)の問題を解くためのchrome拡張機能です。  
 ブラウザで動かすことのできる「[なでしこ３](https://nadesi.com/doc3/)」の言語エンジンを利用して、なでしこ３で書いたコードを自動でJavaScriptに変換することでAtCoderに提出します。  
 なでしこ３の文法は[なでしこ３公式マニュアル](https://nadesi.com/v3/doc/index.php)を参照してください。  
@@ -11,13 +15,8 @@
 - なでしこv3.3.55
 
 ## インストール方法
-1. なでしこーだーをダウンロードして展開します。
-2. chromeを起動します。
-3. 拡張機能の設定を開きます。
-   - 「環境設定 > 拡張機能」を開くか、chromeの検索バーに`chrome://extensions`と入力します。
-4. 右上の「デベロッパーモード」をオンにします。
-5. 左上の「パッケージ化されていない拡張機能を読み込む」をクリックし、1.でダウンロードしたフォルダを選択します。
-これでchromeに「なでしこーだー」がインストールされます。
+1. chromeを起動し、chrome ウェブストアで[なでしこーだーのページ](https://chrome.google.com/webstore/detail/pbhmgehdalachojhgbpnelagkfkoclfb?authuser=0&hl=ja)を開きます。
+2. 「chromeに追加」をクリックし、chromeへのインストールを許可します。
 
 ## 使い方
 AtCoderのコンテストページを開くと自動的に「なでしこーだー」が起動します。
