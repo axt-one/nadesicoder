@@ -70,7 +70,7 @@ function compile(code) {
 /*
 このコードは日本語プログラミング言語「なでしこ」で記述されたソースコードを、
 chrome拡張機能「なでしこーだー」(https://axt-one.github.io/nadesicoder/)
-でatcoderに提出可能なJavaScriptの形式に変換したものです。
+でAtCoderに提出可能なJavaScriptの形式に変換したものです。
 
 
 元のソースコード
